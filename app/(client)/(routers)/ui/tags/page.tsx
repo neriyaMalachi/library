@@ -7,7 +7,7 @@ const Tags = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <div className=" w-full h-full flex flex-col justify-around p-4">
+    <div className=" w-full h-full flex flex-col justify-around p-3">
       {/* inpute */}
       <div>
         <fieldset className="border border-zinc-600 w-72 h-16 p-1">
@@ -30,10 +30,25 @@ const Tags = () => {
       </div>
       {/* module */}
       <div>
-        <button onClick={() => setToggle(true)}>open</button>
+        <button
+          className="border-2 border-rose-600 rounded-lg p-1"
+          onClick={() => {
+            if (toggle === false) setToggle(true);
+            else {
+              setToggle(false);
+            }
+          }}
+        >
+          open modale
+        </button>
         <dialog open={toggle}>
           <div className="p-4 w-96 h-52 border border-zinc-400 rounded-lg">
-            <button onClick={() => setToggle(false)}>close</button>
+            <button
+              className="border-2 border-rose-600 rounded-lg p-1"
+              onClick={() => setToggle(false)}
+            >
+              close
+            </button>
             hello
           </div>
         </dialog>
@@ -41,7 +56,9 @@ const Tags = () => {
 
       {/* button */}
       <div>
-        <button className="bg-slate-200 p-3 rounded-md font-bold hover:bg-slate-100 ">click me</button>
+        <button className="bg-slate-200 p-3 rounded-md font-bold hover:bg-slate-100 ">
+          click me
+        </button>
       </div>
     </div>
   );

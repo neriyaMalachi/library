@@ -17,6 +17,9 @@ const List = () => {
     "login",
     "tags",
     "Avatar",
+    "ImageZoom",
+    "flip",
+    "animation",
   ]);
   console.log(search);
 
@@ -31,8 +34,8 @@ const List = () => {
         {typeFeature
           .filter((item) => {
             return search.toLowerCase() === ""
-            ? item 
-            :item.toLowerCase().includes(search)
+              ? item
+              : item.toLowerCase().includes(search);
           })
           .map((items, index) => (
             <div key={index} className="font-extralight flex  flex-col">
