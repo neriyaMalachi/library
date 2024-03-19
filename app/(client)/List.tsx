@@ -20,6 +20,8 @@ const List = () => {
     "ImageZoom",
     "flip",
     "animation",
+    "cardDetails",
+
   ]);
   console.log(search);
 

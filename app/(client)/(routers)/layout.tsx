@@ -23,7 +23,7 @@ export default function RootLayout({
           <div className=" hidden lg:flex" >
             <List />
           </div>
-          <div className=" flex justify-center items-center w-full h-[calc(100vh-10rem)]">
+          <div className="text-black flex justify-center items-center w-full h-[calc(100vh-10rem)]">
             <QueryClientProvider client={queryClient}>
               {children}
             </QueryClientProvider>

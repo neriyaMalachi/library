@@ -9,7 +9,7 @@ const Landing = () => {
 
   return (
     
-    <div className=" bg-yellow-50 flex flex-col w-full h-screen">
+    <div className=" bg-yellow-50 flex flex-col w-full h-screen text-black ">
       <div className=" h-40 flex justify-between  items-center">
         <Image className="w-40" src={logo} alt="logoImage" />
         <button className="bg-purple-400 font-medium rounded-lg w-24 m-5 p-2">Login</button>
