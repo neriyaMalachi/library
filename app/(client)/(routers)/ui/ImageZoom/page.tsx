@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import imageForZoomFile from "@/assets/imageForZoomFile.png";
+import imageForZoomFile from "@/assets/ImageForZoomFile.png";
 
 const page = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
